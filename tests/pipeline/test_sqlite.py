@@ -115,7 +115,7 @@ class TestRunExtractionPipelineToSqlite:
 
     def test_postprocessing_failure(self):
         sqlite_pipeline_strategy = BasicTestSqlitePipelineStrategy(
-            target_db_path="Z9SLK://INEXISTING::/",
+            target_db_path="\0",
             sqlite_dictionary_factory=MyTestSqliteDictionary,
         )
 
